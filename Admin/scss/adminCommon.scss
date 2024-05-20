@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+/* font color classes */
+@each $color in blue, orange, green, yellow, red, skyblue, pink, orangered {
+  .text-#{$color} {
+    color: $color;
+  }
+}
+
+/* margin-bottom classes */
+
+$x: 6;
+$y: 6;
+@while $x <= 20 {
+  .mb-#{$x} {
+    margin-bottom: 16px * $y;
+    $x: $x + 1;
+    $y: $y * 2;
+  }
+}
+
+/* background color classes */
+@each $color in blue, orange, green, yellow, red, skyblue, pink, orangered,
+  aliceblue
+{
+  .bg-#{$color} {
+    background-color: $color;
+  }
+}
+
+.font-time {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.font-sans {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+$x: 6;
+$y: 6;
+@while $x <= 20 {
+  .mt-#{$x} {
+    margin-top: 16px * $x;
+  }
+
+  $x: $x + 1;
+  $y: $y * 2;
+}
+
+$x: 6;
+$y: 6;
+@while $x <= 20 {
+  .pt-#{$x} {
+    padding-top: 16px * $x;
+  }
+
+  $x: $x + 1;
+  $y: $y * 2;
+}
+
+nav a {
+  font-family: "Staatliches", cursive;
+  font-size: 20px;
+  font-weight: 100;
+  color: #808080 !important;
+}
+
+.font-Staatliches-heading {
+  font-family: "Staatliches", cursive !important;
+  font-size: 45px;
+}
+
+.font-Staatliches {
+  font-family: "Staatliches", cursive !important;
+  font-size: 20px;
+}
+
+.navbar-brand {
+  font-family: "Staatliches", cursive;
+  font-size: 30px;
+  color: white !important;
+}
